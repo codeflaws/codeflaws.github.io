@@ -1,0 +1,6 @@
+{
+  "name": "Codeflaws",
+  "tagline": "",
+  "body": "### [Codeflaws benchmark]\r\nThe Codeflaws benchmark consists of 7945 programs in the Codeforces online database. It is a collection of 4085 defects classified across 40 defect classes. It allows comprehensive investigation of the seit of repairable defect classes by various program repair tools.\r\n\r\n[Download Codeflaws](http://www.comp.nus.edu.sg/~release/codeflaws/codeflaws.tar.gz)\r\n\r\n### Authors and Contributors\r\nContact Shin Hwei Tan (@stan6), Yulis (@e0001221) or Sergey Mechtaev (@mechtaev) for questions about the benchmark.\r\n\r\n### Support\r\nSupported by ![Tsunami](http://www.comp.nus.edu.sg/~tsunami/default_files/logo.png)\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
