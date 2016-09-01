@@ -832,7 +832,7 @@ footer .owner p a {
 }
 
 .markdown-body table {
-  width: 100%;
+  width: 95%;
   margin-left: -2px;
   margin-right: -2px;
 }
@@ -854,17 +854,15 @@ footer .owner p a {
   text-align: left;
   background-color: #FFFFFF;
 }
-.markdown-body th:first-child
-.markdown-body td:first-child,
+
+.markdown-body td:first-child
 {
-  width: 100%;
+  width: 27%;
   padding-left: 1px;
-  text-align: left;
 }
 
 .markdown-body td:last-child {
-  width: 70%;
-  text-align:center;
+  width: 73%;
   border-right: 0 none;
 }
 
