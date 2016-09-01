@@ -856,7 +856,7 @@ footer .owner p a {
 }
 
 .markdown-body td:first-child,
-.markdown-body th:first-child {
+{
   width: 25%;
   padding-left: 1px;
   text-align: left;
