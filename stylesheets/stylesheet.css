@@ -852,6 +852,7 @@ footer .owner p a {
   border-bottom: 1px solid #557398;
   padding: 2px;
   text-align: left;
+  style="background-color:white"
 }
 
 .markdown-body td:first-child,
@@ -862,7 +863,7 @@ footer .owner p a {
 }
 
 .markdown-body td:last-child {
-  width: 65%;
+  width: 70%;
   text-align:center;
   border-right: 0 none;
 }
