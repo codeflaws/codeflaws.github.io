@@ -859,7 +859,7 @@ footer .owner p a {
 .markdown-body th:first-child {
   width: 25%;
   padding-left: 1px;
-  text-align: center;
+  text-align: left;
 }
 
 .markdown-body td:last-child {
