@@ -854,6 +854,13 @@ footer .owner p a {
   text-align: left;
   background-color: #FFFFFF;
 }
+.markdown-body th:first-child
+{
+  width: 25%;
+  padding-left: 1px;
+  text-align: left;
+}
+
 
 .markdown-body td:first-child,
 {
