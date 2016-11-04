@@ -51,6 +51,12 @@
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Defects in Codeflaws</h3>
+We classify each defect into two types:
+<ul>
+<li>Error Type</li>
+<li>Fault Type<li>
+<ul>
+
 <p>We use the <a href="http://codeforces.com/blog/entry/4088">verdict by Codeforces</a> (explanation given by Codeforces for the rejected submission) as the "Error Type". 
 </p>
 Below are the explanation of each error type:
@@ -71,7 +77,7 @@ Below are the explanation of each error code:
   <li>OTHERS (exit status: varies) denotes the scenario where the returned exit code is not the reserved exit code with special meaning. This usually occurs when the program is lacking a return statement (hence a random exit code is returned) or an user-specified return code (e.g., return -1/1) is returned.</li>
 </ul> 
 
-<p> We also use mutation-oriented classification for representing the fault types. Table below shows the detailed classification:</p><p><img src="images/dtable-1.png" style="vertical-align:bottom" alt="Defect Classes" style="width:728px;height:1028px;"> </p>
+<p> To represent the fault type, we use a mutation-oriented classification. Table below shows the detailed classification:</p><p><img src="images/dtable-1.png" style="vertical-align:bottom" alt="Defect Classes" style="width:728px;height:1028px;"> </p>
 <p><a href="https://github.com/codeflaws/codeflaws/blob/master/README.md">README.md</a> contains information about the structure of the benchmark and the provided script for running each repair tool.</p>
 <p><a href="https://codeflaws.github.io/defect-table.html">Defect Table</a> contains defect classes information about each defect.</p>
 <p><a href="https://codeflaws.github.io/summarytable.pdf">Table V</a> contains information about how often each repair tool generates correct or incorrect patches across the defect classes.</p>
