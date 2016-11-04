@@ -868,24 +868,6 @@ footer .owner p a {
   font-size: 14px;
 }
 
-.markdown-body td.faulttype {
-{
-  width: 5%;
-  padding-left: 0px;
-}
-
-.markdown-body td.errortype {
-{
-  width: 5%;
-  padding-left: 0px;
-}
-
-.markdown-body td.errorcode {
-{
-  width: 5%;
-  padding-left: 0px;
-}
-
 .markdown-body th {
   font-size: 18px;
   text-align: right;
