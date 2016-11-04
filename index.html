@@ -51,6 +51,26 @@
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Defects in Codeflaws</h3>
+<p>We use the <a href="http://codeforces.com/blog/entry/4088">verdict by Codeforces</a> (explanation given by Codeforces for the rejected submission) as the "Error Type". 
+</p>
+Below are the explanation of each error type:
+
+ <table>
+<tbody>     <tr>       <td>Memory limit exceeded </td>       <td>The program tries to consume more memory than is indicated in the problem statement</td>     </tr>     <tr>       <td>Time limit exceeded </td>       <td>The program hadn't terminated in time indicated in the problem statement</td>     </tr>     <tr>       <td>Runtime error </td>       <td>The program terminated with a non-zero return code (possible reasons: array out of bound error, division by zero, stack overflow, incorrect pointers usage, etc) </td>     </tr>     <tr>       <td>Wrong answer </td>       <td>The program produced different output than the expected output.</td>     </tr>    
+ <!--tr>       
+<td>Idleness limit exceeded </td>       <td>The program didn't use the CPU time for considerable time</td>     </tr>     <tr>       <td>Denial of judgement </td>       <td>The solution was impossible to run, perhaps, due to a judging error. The most probable cause is an error in the program (for example, using extra large arrays)</td>     </tr-->
+   </tbody> </table>
+</p>
+<p>We further augment the "RUNTIME_ERROR" error type with "Error code". "Error code" is obtained by running the program with the failing test (given by Codeforce for explaining a rejected submission) and checking the exit status. </p>
+Below are the explanation of each error code:
+ <ul>
+  <li>SIGSEGV (exit status: 139) denotes segmentation fault</li>
+  <li>SIGABRT (exit status: 134) denotes abort signal</li>
+  <li>SIGFPE (exit status: 136) denotes floating point exception</li>
+  <li>TIMEOUT (exit status: 124) denotes timeout after running the command for one minute</li>
+  <li>OTHERS (exit status: varies) denotes the scenario where the returned exit code is not the reserved exit code with special meaning. This usually occurs when the program is lacking a return statement (hence a random exit code is returned) or an user-specified return code (e.g., return -1/1) is returned.</li>
+</ul> 
+
 <p> <img src="images/dtable-1.png" style="vertical-align:bottom" alt="Defect Classes" style="width:728px;height:1028px;"> </p>
 <p><a href="https://github.com/codeflaws/codeflaws/blob/master/README.md">README.md</a> contains information about the structure of the benchmark and the provided script for running each repair tool.</p>
 <p><a href="https://codeflaws.github.io/defect-table.html">Defect Table</a> contains defect classes information about each defect.</p>
