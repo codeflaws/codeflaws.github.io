@@ -1,13 +1,63 @@
-<TABLE cellpadding="4" style="border: 1px solid #000000; border-collapse: collapse;" border="1">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/github-dark.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Codeflaws</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+   <div class="wrapper">
+ <article class="markdown-body">
+<!--h2>Defect Table</h2-->
+<!-- img width="159" height="54" src="http://www.comp.nus.edu.sg/%7Etsunami/default_files/logo.png" alt="Tsunami"-->
+<p>We use the <a href="http://codeforces.com/blog/entry/4088">verdict by Codeforces</a> (explanation given by Codeforces for the rejected submission) as the "Error Type". 
+</p>
+Below are the explanation of each error type:
+
+ <table>
+<tbody>     <tr>       <td>Memory limit exceeded </td>       <td>The program tries to consume more memory than is indicated in the problem statement</td>     </tr>     <tr>       <td>Time limit exceeded </td>       <td>The program hadn't terminated in time indicated in the problem statement</td>     </tr>     <tr>       <td>Runtime error </td>       <td>The program terminated with a non-zero return code (possible reasons: array out of bound error, division by zero, stack overflow, incorrect pointers usage, etc) </td>     </tr>     <tr>       <td>Wrong answer </td>       <td>The program produced different output than the expected output.</td>     </tr>    
+ <!--tr>       
+<td>Idleness limit exceeded </td>       <td>The program didn't use the CPU time for considerable time</td>     </tr>     <tr>       <td>Denial of judgement </td>       <td>The solution was impossible to run, perhaps, due to a judging error. The most probable cause is an error in the program (for example, using extra large arrays)</td>     </tr-->
+   </tbody> </table>
+</p>
+<p>Note that Error Code is specified for RUNTIME_ERROR error type. It is obtained by running the program with the failing test (given by Codeforce for explaining a rejected submission) and checking the exit status. </p>
+Below are the explanation of each error code:
+ <ul>
+  <li>SIGSEGV (exit status: 139) denotes segmentation fault</li>
+  <li>SIGABRT (exit status: 134) denotes abort signal</li>
+  <li>SIGFPE (exit status: 136) denotes floating point exception</li>
+  <li>TIMEOUT (exit status: 124) denotes timeout after running the command for one minute</li>
+  <li>OTHERS (exit status: varies) denotes the scenario where the returned exit code is not the reserved exit code with special meaning. This usually occurs when the program is lacking a return statement (hence a random exit code is returned) or an user-specified return code (e.g., return -1/1) is returned.</li>
+</ul> 
+    <header>
+      <h2 style="text-align:center">Defect Table</h2>
+    </header>
+
+<TABLE cellpadding="1" style="border: 1px solid #000000; border-collapse: collapse;" border="1" style="float:center">
+ <colgroup>
+       <col span="1" style="width: 30%;">
+       <col span="3" style="width: 21%;text-align:center;">
+       <col span="1" style="width: 49%;">
+    </colgroup>
  <TR>
   <TH rowspan="2">Version</TH>
   <th colspan="3">Defect Classes</th>
   <TH rowspan="2">GitHubLink</TH>
  </TR>
  <TR>
-  <TD>Fault Type</TD>
-  <TD>Error Type</TD>
-  <TD>Error Code</TD>
+  <TD class="faulttype">Fault Type</TD>
+  <TD class="errortype">Error Type</TD>
+  <TD class="errorcode">Error Code</TD>
  </TR>
  <TR>
   <TD>71-A-bug-18359456-18359477</TD>
@@ -28605,3 +28655,9 @@
   <TD><a href="https://github.com/codeflaws/codeflaws/tree/master/391-A-bug-6056884-6056897">https://github.com/codeflaws/codeflaws/tree/master/391-A-bug-6056884-6056897</a></TD>
  </TR>
 </TABLE>
+        </article>
+      </div>
+    </div>
+
+</body>
+</html>

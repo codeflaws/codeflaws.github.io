@@ -851,7 +851,7 @@ footer .owner p a {
   border-right: 1px solid #557398;
   border-bottom: 1px solid #557398;
   padding: 2px;
-  text-align: left;
+  text-align: center;
   background-color: #FFFFFF;
 }
 
@@ -861,10 +861,29 @@ footer .owner p a {
   padding-left: 0px;
 }
 
+
 .markdown-body td:last-child {
   width: 100%;
   border-right: 0 none;
   font-size: 14px;
+}
+
+.markdown-body td.faulttype {
+{
+  width: 5%;
+  padding-left: 0px;
+}
+
+.markdown-body td.errortype {
+{
+  width: 5%;
+  padding-left: 0px;
+}
+
+.markdown-body td.errorcode {
+{
+  width: 5%;
+  padding-left: 0px;
 }
 
 .markdown-body th {
